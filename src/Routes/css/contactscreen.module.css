@@ -1,0 +1,13 @@
+.container {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 1fr;
+  grid-column-gap: 30px;
+}
+
+.image {
+  grid-column: 1 / 2;
+}
+
+.description {
+  grid-column: 2 / 3;
+}

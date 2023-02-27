@@ -1,0 +1,39 @@
+.container {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 1fr;
+  grid-column-gap: 30px;
+}
+
+.loading {
+  margin: auto;
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #565656;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: loading 1s linear infinite;
+  -webkit-animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.image {
+  grid-column: 1 / 2;
+}
+
+.description {
+  grid-column: 2 / 3;
+}
+
+.price{
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+  color: #047615;
+  background-color: #84F653;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
